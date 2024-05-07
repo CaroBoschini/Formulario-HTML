@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <title>Pagina de prueba</title>
+ </head>
+ <body>
+  <h1>Bienvenidos a la página de prueba</h1>
+  <h2> Espero que les sirva para ver un ejemplo de formularios</h2>
+  <p> Primera pagina web de prueba con formularios</p>
+
+  <form id="form-order">
+      <p>
+        <label for="name"> Nombre (obligatorio)</label>
+        <input type="text" name="name" id="name"
+        placeholder=" Carolina Boschini"
+        autofocus
+        autocomplete
+        required>
+      </p>
+      <p>
+        <label for="passwd"> Contraseña (obligatorio)</label>
+        <input type="password" name="passwd" id="passwd"
+        placeholder="caramelo123"
+        pattern="[a-z] {3} [0-8] {4}"
+        required>
+      </p>
+      <p>
+        <label for="phone"> Teléfono </label>
+        <input type="tel" name="phone" id="phone" placeholder="+08102223510">
+      </p>
+      <p>
+       <label for="email"> Email</label>
+       <input type="email" name="email" id="email" placeholder="juanperez@email.com">  
+      </p>
+      <p>
+        <label for="website"> Tu página web</label>
+        <input type="url" name="website" id="website" placeholder="http://www.tuweb.com">
+      </p>
+      <p>
+        <label for="numberexample"> N° de temas</label>
+        <input type="number" name="numberexample" id="numberexample" min="1" max="13" placeholder="1" step="2">
+      </p>
+      <p>
+        <label for="deliverydate"> Fecha de envio</label>
+        <input type="date" name="deliverydate" id="deliverydate" min="2020-07-30">
+      </p>
+      <p>
+        <label for="colourexample"> Color del item</label>
+        <input type="color" name="colourexample" id="colourexample" value="#1A33FF">
+      </p>
+      <p>
+        <label for="search"> Buscar</label>
+        <input type="search" name="search" id="search">
+      </p>
+      <p> 
+        <label for="points"> Rango de valores</label>
+        <input type="range" name="points" id="points" min="1" max="10">
+      </p>
+      <p>
+        <fieldset>
+          <legend> Selecciona una prioridad</legend>
+          <p><label><input type="radio" name="priority" value="baja" checked> Baja </label></p>
+          <p><label><input type="radio" name="priority" value="intermedia"> Intermedia </label></p>
+          <p><label><input type="radio" name="priority" value="alta"> Alta </label></p>
+        </fieldset>
+      </p>
+      <p>
+        <fieldset>
+          <legend> Selecciona el tipo de envio</legend>
+          <p><label><input type="checkbox" name="deliverytype" value="urgente" checked> Baja </label></p>
+          <p><label><input type="checkbox" name="deliverytype" value="acuse"> Con acuse de recibo </label></p>
+          <p><label><input type="checkbox" name="deliverytype" value="reembolso"> Cotra reembolso </label></p>
+        </fieldset>
+      </p>
+      <input type="submit" value="Enviar">
+  </form>
+ </body>
+</html>
